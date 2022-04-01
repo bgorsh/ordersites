@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сайт на заказ</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="js/serchscript.js" defer></script>
+    <script src="js/porttabs.js" defer></script>
+    <script src="js/accordpay.js" defer></script>
+  </head>
+  <body>
+    <div class="site-container">
+      <header class="header">
+        <div class="container">
+          <div class="header-wrap">
+            <a href="#"
+              ><img src="img/Logotipe.png" alt="Logotipe" class="header__logo"
+            /></a>
+            <button class="header__burger-btn">
+              <span class="header__burger-icon"></span>
+            </button>
+            <nav class="header__nav">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="#about" class="header__menu-link"> Обо мне </a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#portfolio" class="header__menu-link"> Портфолио </a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#payment" class="header__menu-link"> Цены </a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#order" class="header__menu-link"> Заказать разработку </a>
+                </li>
+              </ul>
+              <form action="#" class="header__nav-form form">
+                <input type="search" class="form__input" name="search" placeholder="Поиск по сайту"></input>
+                <button class="form__btn btn-reset">
+                  <span class="form__btn-icon"
+                    ><svg
+                      width="23"
+                      height="22"
+                      viewBox="0 0 23 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="6.8678"
+                        height="1.71695"
+                        transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"
+                        fill="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                        fill="white"
+                      /></svg></span>
+                </button>
+              </form>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="container">
+            <div class="hero__wrapper">
+              <div class="hero__text-wrap">
+                <h1 class="hero__title">Нужен сайт?</h1>
+                <p class="hero__descr">
+                  Привет! Меня зовут Борис, и я начинающий специалист по созданию сайтов. Сейчас мне нужно набраться опыта и наработать хорошее портфолио, поэтому предлагаю сделать сайт по символической цене.
+                </p>
+                <a href="https://join.skype.com/invite/dCqaxKBL4Kwb" target="_blank" class="hero__btn"><span class="hero__btn-icon"><img src="img/icons8-скайп.svg" alt="icon" srcset="img/icons8-скайп.svg"></span> Связаться</a>
+              </div>
+              <div class="hero__img-wrap">
+                <img src="img/Itsme.png" alt="" class="hero__img">
+              </div>
+            </div>            
+          </div>        
+        </section>
+        <section class="about" id="about">
+          <div class="container">
+            <div class="about__wrap">
+              <h2 class="section-title about__title">
+                Обо мне
+              </h2>
+              <p class="about__descr">
+                Меня зовут Борис Горшунов - интернет-предприниматель, практик в теме партнерского маркетинга, общий стаж работы с партнерскими программами более трех лет. Увлекаюсь созданием сайтов, интересуюсь интернет-заработком и всем, что с этим связано. На свои первые работы я потратил кучу времени и сил, но зато получил неоценимый опыт в создании сайтов. Учился многому сам без чьей-либо помощи. Оказывается, делать сайты гораздо проще и интересней, чем так, как я собирал их раньше, практически «на коленке». Теперь буду и дальше осваивать все тонкости этого увлекательного мастерства. В данный момент прохожу обучение в онлайн университете Skillbox по специальности веб-разработчик.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+          <div class="container">
+            <div class="portfolio__wrap">
+              <h2 class="section-title">Портфолио</h2>
+              <ul class="portfolio__tabs-btn--wrap tabs">
+                <li class="tabs__item">
+                  <button class='tabs__btn btn-reset' data-tab='#one'>
+                    Пример блогов
+                  </button>
+                </li>
+                <li class="tabs__item">
+                  <button class='tabs__btn btn-reset' data-tab='#two'>
+                    Пример лендингов
+                  </button>
+                </li>
+              </ul>
+              <div class="tab__content" id="one">
+                <div class="tab__content-item">
+                  <div class="tab__content-left">
+                    <p class="tab__content-left--text">
+                      У меня всего 2 блога. Первый – о технологиях создания сайтов. Это мой первый блог, когда я еще знал о
+                      строительстве сайтов совсем немного. Тем не менее я его сделал, заполнял статьями по мере изучения этого
+                      вопроса. Второй блог – это блог об информационном маркетинге. Некоторое время я работал в инфобизнесе
+                      и у меня получалось. Но вскоре я понял, что это не мое. Больше всего мне нравится творить своими руками. Я
+                      начал учиться на веб-разработчика. Посмотреть можно, кликнув на картинку.
+                    </p>
+                  </div>
+                  <div class="tab__content-right--img">
+                    <a href="http://bgorshunov.ru" target="_blank" class="tab__content-right--link">
+                      <img src="img/sites/blog1.jpg" alt="блог1" class="tab__img">
+                    </a>
+                    <a href="https://infobiz.bgorshunov.ru/" target="_blank" class="tab__content-right--link">
+                      <img src="img/sites/blog2.jpg" alt="блог2" class="tab__img">
+                    </a>
+                  </div>
+                </div>               
+              </div>
+              <div class="tab__content" id="two">
+                <div class="tab__content-item">
+                  <div class="tab__content-left">
+                    <p class="tab__content-left--text">
+                      Лендингов я сделал достаточно много. Примерно больше 30. Когда я занимался инфомаркетингом, мне
+                      приходилось делать подписные, продающие, информационные страницы. На подписных страницах
+                      (лендингах) я собрал не малую подписную базу, на которой зарабатывал. Кроме этого представлены три лендинга, сделанные в процессе обучения в Skillbox. Все их можно посмотреть, кликнув на картинку.
+                    </p>
+                  </div>
+                  <div class="tab__content-right--img">
+                    <a href="http://infolight.bgorshunov.ru/trening/" target="_blank" class="tab__content-right--link"><img src="img/sites/lend3.jpg" alt="лендинг1" class="tab__img">
+                    </a>
+                    <a href="http://evklid.bgorshunov.ru/" target="_blank" class="tab__content-right--link"><img src="img/sites/lend4.jpg" alt="лендинг2" class="tab__img">
+                    </a>
+                    <a href="http://hotels.bgorshunov.ru/" target="_blank" class="tab__content-right--link"><img src="img/sites/lend5.jpg" alt="лендинг3" class="tab__img">
+                    </a>
+                    <a href="http://projects.bgorshunov.ru/blanchard/" target="_blank" class="tab__content-right--link"><img src="img/sites/lend6.jpg" alt="лендинг4" class="tab__img">
+                    </a>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="payment" id="payment">
+          <div class="container">
+            <div class="payment__wrap">
+              <div class="payment__left-block">
+                <div class="payment__left-block--wrap">
+                  <img src="img/wallet.png" alt="картинка" class="payment__left-block--img">
+                </div>
+              </div>
+              <div class="payment__right-block">
+                <h2 class="section-title payment__title">
+                  Примерные цены на разработку
+                </h2>
+                <div class="payment__accordeon accordeon">
+                  <div class="accordeon__item">
+                    <div class="accordeon__header">
+                      <h3 class="accordeon__header-title">
+                        Одностраничные сайты
+                      </h3>
+                      <button class="accordeon__header-btn--icon">
+                        <span class="accordeon__header-icon">
+                          <?xml version='1.0' encoding='utf-8'?>
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                            <g>
+                              <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+                            </g>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="accordeon__content">
+                      <ul class="accordeon__content-list">
+                        <li class="accordeon__content-item">
+                          <p class="accordeon__content-text">
+                            Правки по вашему сайту
+                          </p>
+                          <p class="accordeon__content-text">
+                            800р/час
+                          </p>
+                        </li>
+                        <li class="accordeon__content-item">
+                          <p class="accordeon__content-text">
+                            Разработка сайта с нуля
+                          </p>
+                          <p class="accordeon__content-text">
+                            от 15000 рублей
+                          </p>
+                        </li>
+                        <li class="accordeon__content-item">
+                          <p class="accordeon__content-text">
+                            Разработка новых страниц
+                          </p>
+                          <p class="accordeon__content-text">
+                            от 5000 рублей
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordeon__item">
+                    <div class="accordeon__header">
+                      <h3 class="accordeon__header-title">
+                        Многостраничные сайты
+                      </h3>
+                      <button class="accordeon__header-btn--icon">
+                        <span class="accordeon__header-icon">
+                          <?xml version='1.0' encoding='utf-8'?>
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                            <g>
+                              <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+                            </g>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="accordeon__content">
+                      <ul class="accordeon__content-list">
+                        <li class="accordeon__content-item">
+                          <p class="accordeon__content-text">
+                            Сайт под ключ
+                          </p>
+                          <p class="accordeon__content-text">
+                            от 30000 рублей
+                          </p>
+                        </li>
+                        <li class="accordeon__content-item">
+                          <p class="accordeon__content-text">
+                            Посадка готовой верстки на Wordpress
+                          </p>
+                          <p class="accordeon__content-text">
+                            от 50000 рублей
+                          </p>
+                        </li>
+                        <li class="accordeon__content-item">
+                          <p class="accordeon__content-text">
+                            Доработка дизайна страниц
+                          </p>
+                          <p class="accordeon__content-text">
+                            от 4000 рублей
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordeon__item">
+                    <div class="accordeon__header">
+                      <h3 class="accordeon__header-title">
+                        Интеграции сторонних сервисов
+                      </h3>
+                      <button class="accordeon__header-btn--icon">
+                        <span class="accordeon__header-icon">
+                          <?xml version='1.0' encoding='utf-8'?>
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                            <g>
+                              <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+                            </g>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="accordeon__content">
+                      <ul class="accordeon__content-list">
+                        <li class="accordeon__content-item">
+                          <p class="accordeon__content-text">
+                            Подключение метрики
+                          </p>
+                          <p class="accordeon__content-text">
+                            от 1000 рублей
+                          </p>
+                        </li>
+                        <li class="accordeon__content-item">
+                          <p class="accordeon__content-text">
+                            Подключение textolite
+                          </p>
+                          <p class="accordeon__content-text">
+                            от 1000 рублей
+                          </p>
+                        </li>
+                        <li class="accordeon__content-item">
+                          <p class="accordeon__content-text">
+                            Подключение чат-бота
+                          </p>
+                          <p class="accordeon__content-text">
+                            от 3000 рублей
+                          </p>
+                        </li>
+                      </ul> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="order" id="order">
+          <div class="container">
+            <div class="order__wrap">
+              <h2 class="section-title order__title">
+                Первые три проекта сделаю со скидкой 20%
+              </h2>
+              <h2 class="section-title order__title-two">
+                Заявка на разработку
+              </h2>
+              <h3 class="order__subtitle">
+                Оставьте контакты, по которым я смогу с вами связаться и обсудить проект
+              </h3>
+              <form action="#" class="order__form">
+                <input type="text" placeholder="Имя*" class="order__form-name">
+                <input type="mail" placeholder="Email*" class="order__form-mail">
+                <input type="tel" placeholder="Телефон*" class="order__form-tel">
+                <button class="order__form-btn btn-reset">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrap">
+            <img src="img/Logotipe.png" alt="footer__logo" class="footer__logo">
+            <div class="footer__social-wrap">
+              <a href="https://vk.com/" target="_blank" class="footer__social-link">
+                <button class="footer__wk-icon soc-icon">
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z" fill="#CACACA"/>
+                    </svg>
+                </button>
+              </a>
+              <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                <button class="footer__fb-icon soc-icon">
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5 0C10.125 0 0 10.1431 0 22.6355C0 33.9307 8.23499 43.3057 18.99 45V29.1867H13.275V22.6355H18.99V17.6431C18.99 11.9729 22.3425 8.85542 27.495 8.85542C29.9475 8.85542 32.5125 9.28464 32.5125 9.28464V14.8645H29.6775C26.8875 14.8645 26.01 16.6039 26.01 18.3886V22.6355H32.265L31.2525 29.1867H26.01V45C31.312 44.1593 36.1399 41.4432 39.6223 37.342C43.1047 33.2408 45.012 28.0248 44.9999 22.6355C44.9999 10.1431 34.875 0 22.5 0Z" fill="#CACACA"/>
+                    </svg>
+                </button>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                <button class="footer__insta-icon soc-icon">
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.1172 22.5C18.1172 24.8785 20.0453 26.8066 22.4238 26.8066C24.8024 26.8066 26.7305 24.8785 26.7305 22.5C26.7305 20.1215 24.8024 18.1934 22.4238 18.1934C20.0453 18.1934 18.1172 20.1215 18.1172 22.5Z" fill="#CACACA"/>
+                    <path d="M12.3521 14.8803C12.5591 14.3194 12.8894 13.8116 13.3186 13.3948C13.7354 12.9656 14.2428 12.6354 14.8041 12.4283C15.2594 12.2515 15.9433 12.0411 17.2029 11.9837C18.5656 11.9216 18.9741 11.9082 22.4238 11.9082C25.8739 11.9082 26.2824 11.9212 27.6447 11.9834C28.9044 12.0411 29.5886 12.2515 30.0435 12.4283C30.6049 12.6354 31.1126 12.9656 31.5291 13.3948C31.9582 13.8116 32.2885 14.319 32.4959 14.8803C32.6727 15.3356 32.8832 16.0198 32.9405 17.2795C33.0026 18.6418 33.016 19.0503 33.016 22.5004C33.016 25.9501 33.0026 26.3587 32.9405 27.7213C32.8832 28.981 32.6727 29.6649 32.4959 30.1201C32.2885 30.6814 31.9586 31.1889 31.5294 31.6057C31.1126 32.0348 30.6052 32.3651 30.0439 32.5721C29.5886 32.7493 28.9044 32.9597 27.6447 33.0171C26.2824 33.0792 25.8742 33.0922 22.4242 33.0922C18.9738 33.0922 18.5652 33.0792 17.2033 33.0171C15.9436 32.9597 15.2594 32.7493 14.8041 32.5721C13.6773 32.1375 12.7868 31.2469 12.3521 30.1201C12.1753 29.6649 11.9648 28.981 11.9072 27.7213C11.845 26.3587 11.832 25.9501 11.832 22.5004C11.832 19.0503 11.845 18.6418 11.9072 17.2795C11.9645 16.0198 12.175 15.3356 12.3521 14.8803ZM22.4238 29.1344C26.0881 29.1344 29.0585 26.1643 29.0585 22.5001C29.0585 18.8358 26.0881 15.8657 22.4238 15.8657C18.7599 15.8657 15.7895 18.8358 15.7895 22.5001C15.7895 26.1643 18.7599 29.1344 22.4238 29.1344ZM15.5272 17.1538C16.3834 17.1538 17.0776 16.4596 17.0776 15.6034C17.0776 14.7471 16.3834 14.0529 15.5272 14.0529C14.6709 14.0529 13.9767 14.7471 13.9767 15.6034C13.9771 16.4596 14.6709 17.1538 15.5272 17.1538Z" fill="#CACACA"/>
+                    <path d="M22.6204 0C34.9364 0 44.9238 9.98747 44.9238 22.3034C44.9238 34.6194 34.9364 44.6069 22.6204 44.6069C10.3044 44.6069 0.316959 34.6194 0.316959 22.3034C0.316959 9.98747 10.3044 0 22.6204 0ZM9.89059 27.5836C9.95253 28.9469 10.1693 29.8777 10.4858 30.6924C11.1512 32.4127 12.5111 33.7727 14.2314 34.438C15.0458 34.7545 15.9769 34.971 17.3399 35.0332C18.7057 35.0955 19.1419 35.1105 22.6201 35.1105C26.0985 35.1105 26.5345 35.0955 27.9005 35.0332C29.2635 34.971 30.1946 34.7545 31.009 34.438C31.8639 34.1164 32.6378 33.6124 33.2776 32.9607C33.929 32.3212 34.433 31.547 34.7546 30.6924C35.0711 29.878 35.2879 28.9469 35.3498 27.5839C35.4128 26.2178 35.4274 25.7815 35.4274 22.3034C35.4274 18.8253 35.4128 18.389 35.3502 17.0233C35.2883 15.66 35.0718 14.7292 34.7553 13.9145C34.4337 13.0599 33.9293 12.2857 33.2776 11.6462C32.6382 10.9945 31.8639 10.4905 31.0094 10.1689C30.1946 9.85236 29.2638 9.63592 27.9005 9.57364C26.5348 9.51136 26.0985 9.49638 22.6204 9.49638C19.1423 9.49638 18.706 9.51136 17.3403 9.57398C15.9769 9.63592 15.0462 9.85236 14.2314 10.1685C13.3769 10.4901 12.6026 10.9945 11.9628 11.6462C11.3114 12.286 10.8071 13.0599 10.4858 13.9145C10.169 14.7292 9.95253 15.66 9.89025 17.0233C9.82798 18.389 9.81334 18.8253 9.81334 22.3034C9.81334 25.7815 9.82798 26.2178 9.89059 27.5836Z" fill="#CACACA"/>
+                    </svg>
+                </button>
+              </a>              
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
