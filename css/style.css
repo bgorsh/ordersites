@@ -92,7 +92,6 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 280px;
 }
 
 .header__menu-item:not(:last-child) {
@@ -205,21 +204,23 @@ img {
   color: #fff;
 }
 
-.hero__btn {
-  padding: 20px 48px;
+.hero__button {
+  padding: 20px 35px;
   border: 2px solid #fff;
   border-radius: 100px;
-  background-color: #0e7fad;
-  align-items: center;
-  font-size: 18px;
+  background-color: #35428b;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 32px;
+  line-height: 40px;
   color: #fff;
-  transition: background-color 0.5s ease-in-out;
+  transition-property: background-color, filter;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
 }
 
-.hero__btn:hover {
-  background-color: #0b48b9;
+.hero__button:hover {
+  cursor: pointer;
+  background-color: #5769cf;
   filter: drop-shadow(4px 4px 6px rgb(14, 127, 173));
 }
 
@@ -227,7 +228,7 @@ img {
   display: inline-flex;
   width: 32px;
   height: 32px;
-  transform: translateY(10px);
+  transform: translateY(5px);
 }
 
 .hero__img-wrap {
@@ -579,6 +580,30 @@ img {
   border-radius: 50px;
 }
 
+.order__form-name,
+.order__form-mail,
+.order__form-tel {
+  transition-property: background-color, border-height;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
+}
+
+.order__form-name::placeholder,
+.order__form-mail::placeholder,
+.order__form-tel::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.order__form-name:hover,
+.order__form-mail:hover,
+.order__form-tel:hover {
+  cursor: pointer;
+  background-color: #ececec;
+  border: 2px solid #cacaca;
+}
+
 .order__form-btn {
   width: 25%;
   height: 60px;
@@ -610,7 +635,7 @@ img {
 
 .footer__wrap {
   width: 100%;
-  padding: 16px 0;
+  padding: 15px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -618,7 +643,8 @@ img {
 }
 
 .footer__logo {
-  width: 170px;
+  width: 200px;
+  height: 70px;
 }
 
 .footer__social-wrap {

@@ -40,6 +40,7 @@
                   <a href="#order" class="header__menu-link"> Заказать разработку </a>
                 </li>
               </ul>
+            </nav>
               <form action="#" class="header__nav-form form">
                 <input type="search" class="form__input" name="search" placeholder="Поиск по сайту"></input>
                 <button class="form__btn btn-reset">
@@ -65,7 +66,6 @@
                       /></svg></span>
                 </button>
               </form>
-            </nav>
           </div>
         </div>
       </header>
@@ -76,9 +76,13 @@
               <div class="hero__text-wrap">
                 <h1 class="hero__title">Нужен сайт?</h1>
                 <p class="hero__descr">
-                  Привет! Меня зовут Борис, и я начинающий специалист по созданию сайтов. Сейчас мне нужно набраться опыта и наработать хорошее портфолио, поэтому предлагаю сделать сайт по символической цене.
+                  Привет! Меня зовут Борис, и я начинающий специалист по созданию сайтов. Сейчас мне нужно набраться опыта и наработать хорошее портфолио, поэтому я предлагаю вам сделать сайт. Срок выполнения от 7 дней.
                 </p>
-                <a href="https://join.skype.com/invite/dCqaxKBL4Kwb" target="_blank" class="hero__btn"><span class="hero__btn-icon"><img src="img/icons8-скайп.svg" alt="icon" srcset="img/icons8-скайп.svg"></span> Связаться</a>
+                <a href="https://join.skype.com/invite/dCqaxKBL4Kwb" target="_blank" class="hero__button"><span class="hero__btn-icon">
+                  <img src="img/icons8-скайп.svg" alt="иконка" class="hero__btn-icon">
+                </span>
+                    Связаться
+                </a>
               </div>
               <div class="hero__img-wrap">
                 <img src="img/Itsme.png" alt="" class="hero__img">
@@ -324,10 +328,24 @@
               <h3 class="order__subtitle">
                 Оставьте контакты, по которым я смогу с вами связаться и обсудить проект
               </h3>
-              <form action="#" class="order__form">
-                <input type="text" placeholder="Имя*" class="order__form-name">
-                <input type="mail" placeholder="Email*" class="order__form-mail">
-                <input type="tel" placeholder="Телефон*" class="order__form-tel">
+              <form action="#" method="post" class="order__form">
+                <input
+                name="Имя" 
+                type="text" 
+                placeholder="Имя*"
+                data-validate-field="name" 
+                class="order__form-name">
+                <input
+                name="email"
+                type="email"
+                placeholder="Email*" 
+                data-validate-field="mail" class="order__form-mail">
+                <input 
+                name="tel"
+                type="tel" 
+                placeholder="Телефон*"
+                data-validate-rules="phone"
+                class="order__form-tel">
                 <button class="order__form-btn btn-reset">Отправить</button>
               </form>
             </div>
@@ -337,7 +355,9 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__wrap">
-            <img src="img/Logotipe.png" alt="footer__logo" class="footer__logo">
+            <a href="#">
+              <img src="img/Logotipe.png" alt="footer__logo" class="footer__logo">
+            </a>
             <div class="footer__social-wrap">
               <a href="https://vk.com/" target="_blank" class="footer__social-link">
                 <button class="footer__wk-icon soc-icon">
@@ -367,5 +387,8 @@
         </div>
       </footer>
     </div>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/formvalid.js"></script>
   </body>
 </html>
