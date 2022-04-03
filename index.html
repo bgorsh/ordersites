@@ -346,7 +346,12 @@
                 placeholder="Телефон*"
                 data-validate-rules="phone"
                 class="order__form-tel">
-                <button class="order__form-btn btn-reset">Отправить</button>
+                <div class="order__form-send">
+                  <button class="order__form-btn btn-reset
+                  ">Заказать</button>
+                  <input type="checkbox" id="checkbox" class="order__form-checkbox" data-validate-field="checkbox" checked><label class="label-check" for="checkbox">Я согласен</label>
+              </div>
+
               </form>
             </div>
           </div>

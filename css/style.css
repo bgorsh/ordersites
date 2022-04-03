@@ -536,12 +536,15 @@ img {
   font-weight: 400;
   line-height: 32px;
   margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .order__form {
   width: 70%;
   height: 270px;
   margin: 0 auto;
+  align-items: center;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -604,10 +607,16 @@ img {
   border: 2px solid #cacaca;
 }
 
+.order__form-send {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
 .order__form-btn {
-  width: 25%;
+  width: 55%;
   height: 60px;
-  margin-left: 25%;
   background-color: #c22626;
   color: #fff;
   border: 1px solid #c22626;
@@ -619,6 +628,15 @@ img {
   filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.7));
   transition-property: background-color, transform;
   transition: .5s ease-in-out;
+}
+
+.order__form-checkbox {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.order__form-checkbox:hover {
+  cursor: pointer;
 }
 
 .order__form-btn:hover {
