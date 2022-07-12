@@ -12,7 +12,7 @@ new JustValidate('.order__form', {
     },
     mail: {
       required: true,
-      mail: true
+      email: true
     },
     tel: {
       required: true,
@@ -20,6 +20,10 @@ new JustValidate('.order__form', {
         const phone = selector.inputmask.unmaskedvalue()
         return Number(phone) && phone.length === 10
       }
+    },
+    checkbox: {
+      required: true,
+      checked: true
     }
   }
 })

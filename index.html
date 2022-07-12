@@ -13,6 +13,7 @@
     <script src="js/serchscript.js" defer></script>
     <script src="js/porttabs.js" defer></script>
     <script src="js/accordpay.js" defer></script>
+    <script src="js/smooth-scrolling.js" defer></script>
   </head>
   <body>
     <div class="site-container">
@@ -20,7 +21,7 @@
         <div class="container">
           <div class="header-wrap">
             <a href="#"
-              ><img src="img/Logotipe.png" alt="Logotipe" class="header__logo"
+              ><img src="img/saytodel.png" alt="Logotipe" class="header__logo"
             /></a>
             <button class="header__burger-btn">
               <span class="header__burger-icon"></span>
@@ -78,11 +79,13 @@
                 <p class="hero__descr">
                   Привет! Меня зовут Борис, и я начинающий специалист по созданию сайтов. Сейчас мне нужно набраться опыта и наработать хорошее портфолио, поэтому я предлагаю вам сделать сайт. Срок выполнения от 7 дней.
                 </p>
-                <a href="https://join.skype.com/invite/dCqaxKBL4Kwb" target="_blank" class="hero__button"><span class="hero__btn-icon">
-                  <img src="img/icons8-скайп.svg" alt="иконка" class="hero__btn-icon">
-                </span>
-                    Связаться
-                </a>
+                <button class="hero__btn">
+                	<a href="https://join.skype.com/invite/dCqaxKBL4Kwb" target="_blank" class="hero__button"><span class="hero__btn-icon">
+					  <img src="img/icons8-скайп.svg" alt="иконка" class="hero__btn-icon">
+					</span>
+						Связаться
+					</a>
+                </button>
               </div>
               <div class="hero__img-wrap">
                 <img src="img/Itsme.png" alt="" class="hero__img">
@@ -328,28 +331,31 @@
               <h3 class="order__subtitle">
                 Оставьте контакты, по которым я смогу с вами связаться и обсудить проект
               </h3>
-              <form action="#" method="post" class="order__form">
+              <form action="mail.php" method="POST" id="form" class="order__form">
                 <input
-                name="Имя" 
+                name="name" 
                 type="text" 
                 placeholder="Имя*"
+                required
                 data-validate-field="name" 
-                class="order__form-name">
+                class="order__form-name _req">
                 <input
                 name="email"
                 type="email"
-                placeholder="Email*" 
-                data-validate-field="mail" class="order__form-mail">
+                placeholder="Email*"
+                required 
+                data-validate-field="email" class="order__form-mail _req _email">
                 <input 
                 name="tel"
                 type="tel" 
                 placeholder="Телефон*"
+                required
                 data-validate-rules="phone"
-                class="order__form-tel">
+                class="order__form-tel _req">
                 <div class="order__form-send">
-                  <button class="order__form-btn btn-reset
+                  <button type="submit" class="order__form-btn btn-submit
                   ">Заказать</button>
-                  <input type="checkbox" id="checkbox" class="order__form-checkbox" data-validate-field="checkbox" checked><label class="label-check" for="checkbox">Я согласен</label>
+                  <input type="checkbox" id="checkbox" name="agreement" class="order__form-checkbox _req" data-validate-field="checkbox" checked><label class="label-check" for="checkbox">Принимаю соглашение об обработке моих персональных данных</label>
               </div>
 
               </form>
@@ -361,8 +367,13 @@
         <div class="container">
           <div class="footer__wrap">
             <a href="#">
-              <img src="img/Logotipe.png" alt="footer__logo" class="footer__logo">
+              <img src="img/saytodel.png" alt="footer__logo" class="footer__logo">
             </a>
+            <div class="footer__rights-text">
+            	<p class="rights">
+            		© All rights reserved, 2022 Designed by Gorshunov
+            	</p>
+            </div>
             <div class="footer__social-wrap">
               <a href="https://vk.com/" target="_blank" class="footer__social-link">
                 <button class="footer__wk-icon soc-icon">
@@ -395,5 +406,7 @@
     <script src="js/just-validate.min.js"></script>
     <script src="js/inputmask.min.js"></script>
     <script src="js/formvalid.js"></script>
+    <script src="js/formsend.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
   </body>
 </html>
